@@ -1,0 +1,22 @@
+Los métodos de la clase java.lang.Thread::
+
+Algunos métodos de esta clase nos pueden ayudar a influenciar al programador de hilos a tomar una decisión sobre qué hilo ejecutar en qué momento. Los métodos son los siguientes:
+
++ public static void sleep(long milisegundos) throws InterruptedException
++ public static void yield()
++ public final void join() throws InterruptedException
++ public final void setPriority(int nuevaPrioridad)
+
+Nota: el método sleep() y join() tienen versiones sobrecargadas que no hemos mencionado.
+
+Algunos métodos de la clase java.lang.Object::
+
+Recordemos que toda clase en Java hereda de la clase Object, por lo tanto, cualquier objeto de cualquier tipo tiene todos los métodos de la clase Object por defecto. En este caso analizaremos algunos de ellos que nos son útiles en el manejo de hilos:
+
++ public final void wait() throws InterruptedException
++ public final void notify()
++ public final void notifyAll()
+
+El método wait() define 3 versiones sobrecargadas, incluyendo la mencionada anteriormente.
+
+Antes de mencionar el comportamiento de los métodos anteriormente mencionados, analicemos algunos estados más en los que un hilo se puede encontrar y sus respectivas transiciones.
